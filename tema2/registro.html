@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro Persona</title>
+  </head>
+  <body>
+    <form action="">
+      <label for="nombre">Nombre</label>
+      <input type="text" name="nombre" />
+      <br />
+      <label for="apellido">Apellido</label>
+      <input type="text" name="apellido" />
+      <br />
+      <label for="fecha_nacimiento">Fecha nacimiento</label>
+      <input type="date" name="fecha_nacimiento" />
+      <br />
+      <label for="email">Correo Electronico</label>
+      <input type="email" name="email" />
+      <br />
+      <label for="sexo">Sexo</label>
+      <input type="radio" name="sexo" value="masculino" />Masculino
+      <input type="radio" name="sexo" value="femenino" />Femenino
+      <br />
+      <label for="">Deportes FAvoritos</label>
+      <input type="checkbox" name="futbol" value="futbol" />Futbol
+      <input type="checkbox" name="basket" value="basket" />Basket
+      <input type="checkbox" name="tenis" value="tenis" />Tenis
+      <br />
+      <label for="ciudad">Ciudad</label>
+      <select name="ciudad">
+        <option value="Sucre">Sucre</option>
+        <option value="La Paz">La Paz</option>
+        <option value="Cochabamba">Cochabamba</option>
+        <option value="Santa Cruz">Santa Cruz</option>
+      </select>
+      <br>
+        <label for="imagen">Imagen</label>
+        <input type="file" name="imagen" />
+        <br>
+        <label for="password">Contraseña</label>
+        <input type="password" name="password" />
+        <br>
+        <label for="bigrafia">biografia</label>
+        <textarea name="biografia"  cols="30" rows="10"></textarea>
+
+      <input type="submit" value="Enviar" />
+    </form>
+  </body>
+</html>
