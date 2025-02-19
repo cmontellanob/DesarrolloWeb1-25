@@ -1,0 +1,16 @@
+.bgnaranja {
+    background-color: #FFA500;
+    margin: 7px 5px;
+    text-align: center;
+}
+.bgmorado {
+    background-color: #800080;
+}
+
+
+#contenedor {
+    margin: 0 auto;
+    width: 500px;
+    display: flex;
+    justify-content: ;
+}
