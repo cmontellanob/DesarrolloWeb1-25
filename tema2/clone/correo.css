@@ -1,0 +1,32 @@
+nav.container {
+  background-color: #010101;
+  color: white;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bolder;
+    padding-left: 40px;
+}
+nav.container ul {
+
+  display: flex;
+ 
+  align-items: center;
+
+  list-style: none;
+}
+nav.container ul li {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: "Montserrat Variable", ui-sans-serif, sy;
+}
+
+nav.container ul li a {
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  
+}
+nav.container ul li a:visited {
+  background-color: orange;
+
+}

@@ -1,0 +1,9 @@
+.container{
+    display: grid;
+    grid-template: 50px 50px 50px 50px / 1fr 3fr 1fr;
+    gap: 5px 10px;
+} 
+.item{
+    padding: 10px;
+    background-color: orange;
+}
