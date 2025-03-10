@@ -1,0 +1,2 @@
+Programa php solicite nombre , color de fondo, color  (fdatos.html)
+e imprima al centro en  con borde negro, el nombre con los colores indicados

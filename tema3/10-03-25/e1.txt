@@ -1,0 +1,1 @@
+relizar un programa en php/html que permita sumar  n numeros introducidos por formularios
