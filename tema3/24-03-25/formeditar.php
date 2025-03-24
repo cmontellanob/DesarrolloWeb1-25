@@ -12,6 +12,7 @@
     require("verificarnivel.php");
     $id=$_GET['id'];
     $sql="SELECT id,nombres,apellidos,fecha_nacimiento,sexo,correo FROM personas WHERE id=$id";
+    echo $sql;
     $resultado=$con->query($sql);
     $row = $resultado->fetch_assoc();
     ?>

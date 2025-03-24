@@ -7,7 +7,8 @@ require("verificarsesion.php");
 
 <?php
 include("conexion.php");
-$sql="SELECT id,nombres,apellidos,fecha_nacimiento,sexo,correo FROM personas";
+$sql="SELECT personas.id,nombres,apellidos,fecha_nacimiento,sexo,correo,profesiones.nombre as profesion FROM personas
+      LEFT JOIN profesiones ON personas.profesion_id=profesiones.id";  
 
 $resultado=$con->query($sql);
 
@@ -20,6 +21,7 @@ $resultado=$con->query($sql);
             <th width="60px">Fec.Nacimiento</th>
             <th width="10px">Sexo</th>
             <th width="150px">Correo</th>
+            <th> Profesion</th>
            <?php if($_SESSION['nivel']==1){?>
             <th>Operaciones</th>
             <?php } ?>
@@ -35,6 +37,7 @@ $resultado=$con->query($sql);
         <td><?php echo $row['fecha_nacimiento'];?></td>
         <td><?php echo $row['sexo'];?></td>
         <td><?php echo $row['correo'];?></td>
+        <td><?php echo $row['profesion'];?></td>
         <?php if($_SESSION['nivel']==1){?>
         <td><a href="formeditar.php?id=<?php echo $row['id'];?>">Editar</a>  <a href="delete.php?id=<?php echo $row['id'];?>">Eliminar</a> </td>
         <?php } ?>
