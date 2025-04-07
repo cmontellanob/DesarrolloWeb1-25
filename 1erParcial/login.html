@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 150px ;
+            background-color: blue;
+            font-family: Arial, sans-serif;
+        }
+        div{
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            
+
+        }
+        div p{
+            font-size: 14px;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+        }
+       form label{
+            font-size: 12px;
+            color: rgba(107, 106, 105, 0.808);
+       }
+       input.llenar{
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        width: 200px;
+        border-color: rgba(107, 106, 105, 0.808);
+       }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="image/Avatar.png" alt="Avatar" style="width: 100px;">
+        <p>Iniciar sesion con tu cuentas </p>
+        <form action="autenticar.php" method="post">
+            <label for="usuario">usuario</label>
+            <input type="text" name="usuario" class="llenar">
+            <br>
+            <label for="password">Completa</label>
+            <input type="password" name="password" class="llenar">
+            <br>
+            <input type="submit" value="LOG IN">
+
+        </form>
+
+
+    </div>
+</body>
+</html>
