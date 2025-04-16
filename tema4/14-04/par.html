@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script >
+        var numero = prompt("Introduce un número entero");
+        var resultado = parImpar(numero);
+        alert(`El número ${numero}  es ${resultado}`);
+        function parImpar(numero) {
+          if(numero % 2 == 0) {
+            return "par";
+          }
+          else {
+            return "impar";
+          }
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      // recorrido tradicional
+
+      a=["Lunes","Martes","Miercoles","Jueves","Viernes","Sabado","Domingo"];
+
+      for (i=0;i<a.length;i++){
+        document.write(`<h2>${a[i]}</h2>`);
+      }
+
+      // recorrer con callback
+
+      function  miFuncion(elemento, indice, array) {
+        document.write(`<h2>${elemento}</h2>`);
+      }
+
+      a.forEach(miFuncion);
+
+      // recorrer con forEach
+      a.forEach(function(elemento, indice, array) {
+        document.write(`<h2>${elemento}</h2>`);
+      });
+
+    </script>
+    
+</body>
+</html>

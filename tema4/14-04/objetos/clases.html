@@ -1,0 +1,18 @@
+<script>
+    class Coche {
+        marca;
+        modelo;
+        color;
+        constructor(marca, modelo, color) {
+            this.marca = marca;
+            this.modelo = modelo;
+            this.color = color;
+        }
+
+        mostrarCoche() {
+            alert("El autos marca " + this.marca + " y modelo " + this.modelo);
+        }
+    }
+    var coche1 = new Coche("Ford", "Focus", "Rojo");
+    coche1.mostrarCoche();
+</script>

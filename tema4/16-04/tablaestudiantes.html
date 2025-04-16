@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ 
+
+
+    <script>
+   
+        var estudiantes = [
+            { nombre: "Juan", edad: 20, carrera: "Ingeniería" },
+            { nombre: "Ana", edad: 22, carrera: "Medicina" },
+            { nombre: "Luis", edad: 21, carrera: "Arquitectura" }
+        ];
+        // converir objeto en JSON
+        jsonestudiantes= JSON.stringify(estudiantes);
+        
+        // converitr JSON a objeto
+        nuevoestudiantes=JSON.parse(jsonestudiantes);
+        console.log(estudiantes);
+        console.log(jsonestudiantes);
+        console.log(nuevoestudiantes);
+        var html= `
+        <table>
+            <tr>
+            <th>Nombre</th>
+            <th>Edad</th>
+            <th>Carrera</th>
+            </tr>`;
+
+         estudiantes.forEach(function(estudiante) {
+            html += `<tr>
+            <td>${estudiante.nombre}</td>
+            <td>${estudiante.edad}</td>
+            <td>${estudiante.carrera}</td>
+            </tr>`;
+        });
+        html += `</table>`;
+        console.log(html);
+        document.write(html);
+
+        
+
+
+    </script>
+    
+</body>
+</html>

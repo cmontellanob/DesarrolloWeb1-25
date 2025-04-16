@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+
+
+a=new Array(5); // crea un arreglo de 5 elementos
+a[0]=5; // asigna el valor 1 al primer elemento del arreglo
+a[1]=6; // asigna el valor 2 al segundo elemento del arreglo
+a[2]=5; // asigna el valor 3 al tercer elemento del arreglo
+
+console.log(a); // imprime el arreglo en la consola
+
+a.forEach(element => {
+    document.write(element+"<br>"); // imprime cada elemento del arreglo en el documento
+});
+
+document.write("<hr>"); // imprime una línea en blanco
+for (i=0;i<a.length;i++){
+        document.write(`<h2>${a[i]}</h2>`);
+      }
+
+// ordernar el arreglo
+a.sort(); // ordena el arreglo de menor a mayor
+document.write("<hr>"); // imprime una línea en blanco  
+a.forEach(element => {
+    document.write(element+"<br>"); // imprime cada elemento del arreglo en el documento
+});
+
+</script>
+    
+
+
+
+    
+</body>
+</html>

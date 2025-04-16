@@ -1,0 +1,12 @@
+<script>
+  function coche(marca, modelo, color) {
+    this.marca = marca;
+    this.modelo = modelo;
+    this.color = color;
+  }
+  coche.prototype.MostrarCoche = function () {
+    alert("El autos marca " + this.marca + " y modelo " + this.modelo);
+  };
+    var coche1 = new coche("Ford", "Focus", "Rojo");
+    coche1.MostrarCoche();
+</script>
