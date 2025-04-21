@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p#resultado {
+            color: red;
+            font-size: 20px;
+            border: 1px double black;
+            background-color: lemonchiffon;
+            width: 200px;
+            margin:auto;
+            padding: 10px;
+            
+        }
+    </style>
+</head>
+<body>
+
+    <label for="a">a</label>
+    <input type="number" name="a" id="a">
+    <br>
+    <label for="b">b</label>
+    <input type="number" name="b" id="b">
+    <br>
+    <input type="button" value="Calcular Mayor" onclick="calcularMayor()">
+
+    <p id="resultado">
+
+    </p>
+    <script>
+        document.getElementById('resultado').style.visibility="hidden";
+        function calcularMayor() {
+
+            var a=parseInt( document.getElementById('a').value);
+            var b=parseInt( document.getElementById('b').value);
+
+            if (a>b) {
+                document.getElementById('resultado').innerHTML="el mayor es "+a
+            }
+            else
+            {
+                document.getElementById('resultado').innerHTML="el mayor es "+b
+            }
+            document.getElementById('resultado').style.visibility="visible";
+
+
+        }
+
+    </script>
+
+    
+</body>
+</html>

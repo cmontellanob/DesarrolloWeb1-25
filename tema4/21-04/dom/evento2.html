@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body onload="alert('La página se ha cargado completamente');">
+    <input
+      type="button"
+      value="Pinchame y verás"
+      onclick="alert('Gracias por pinchar');"
+    />
+    <div  id="elemento">
+      Puedes pinchar sobre este elemento o simplemente pasar el ratón por encima
+    </div>
+ <script>
+
+
+    function resaltar()
+    {
+        document.getElementById("elemento").style.backgroundColor="yellow";
+    }
+    document.getElementById("elemento").onmouseover=resaltar;
+ </script>
+
+  </body>
+</html>
