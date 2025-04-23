@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="elemento" />
+    <button id="boton">Añadir a la lista</button>
+    <button id="colorear">Colorear</button>
+
+    <ol id="lista"></ol>
+    <script>
+      document.getElementById("boton").addEventListener("click", () => {
+        let elemento = document.createElement("li");
+        elemento.innerHTML = document.getElementById("elemento").value;
+        document.getElementById("lista").appendChild(elemento);
+      });
+      document.getElementById("colorear").addEventListener("click", () => {
+        primerhijo = document.getElementById("lista").firstChild;
+        i = 1;
+        var hermano = primerhijo;
+       
+        while (hermano != null) {
+            i++;
+            if (i % 2 ==0) {
+            hermano.style.backgroundColor = "red";
+          }
+          
+          hermano = hermano.nextElementSibling;
+          console.log(hermano);
+        }
+      });
+    </script>
+  </body>
+</html>

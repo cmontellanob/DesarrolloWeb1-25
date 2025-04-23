@@ -1,0 +1,15 @@
+{
+  "nombre": "DESARROLLO DE WEB",
+  "sigla": "SIS256",
+  "grupo": 1,
+  "docente": { "nombre": "Carlos", "apellidos": "Montellano" },
+  "horarios": [
+    { "dia": "lunes", "hora": "16:00", "aula": "B006" },
+    { "dia": "miercoles", "hora": "16:00", "aula": "B006" }
+  ],
+  "examenes": ["2025-04-15", "2025-06-15", "2025-06-30", "2025-07-05"],
+  "alumnos": [
+    { "nombre": "Atzel", "apellidos": "Cervates", "cu": "111-980" },
+    { "nombre": "Aldo", "apellidos": "Casanova", "cu": "111-473" }
+  ]
+}
