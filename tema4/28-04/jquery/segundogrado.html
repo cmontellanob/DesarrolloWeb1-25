@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div.resaltado {
+        color: red;
+        font-size: 20px;
+        border: 1px double black;
+        background-color: lemonchiffon;
+        width: 200px;
+        margin: auto;
+        padding: 10px;
+      }
+    </style>
+    <script src="jquery-1.9.1.min.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <input type="number" id="a" />x2+ <input type="number" id="b" />x+
+    <input type="number" id="c" /> =0
+    <input type="button" value="calcular" id="calcular" />
+    <div style="display: flex; flex-direction: column">
+      <div id="x1" class="resaltado"></div>
+      <div id="x2" class="resaltado"></div>
+    </div>
+    <script>
+      $(document).ready(function () {
+        $(".resaltado").hide();
+
+        $("#calcular").click(function (evento) {
+          $(".resaltado").show();
+          var a = parseInt($("#a").val());
+          var b = parseInt($("#b").val());
+          var c = parseInt($("#c").val());
+          var disc = Math.pow(b, 2) - 4 * a * c;
+          var imaginario = "";
+          if (disc < 0) {
+            imaginario = "i";
+            disc = disc * -1;
+          }
+          var x1 = ((-b + Math.sqrt(disc)) / 2) * a;
+          var x2 = ((-b - Math.sqrt(disc)) / 2) * a;
+          $("#x1").html(x1 + imaginario);
+          $("#x2").html(x2 + imaginario);
+        });
+      });
+    </script>
+  </body>
+</html>

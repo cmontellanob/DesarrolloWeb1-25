@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div.resaltado {
+        color: red;
+        font-size: 20px;
+        border: 1px double black;
+        background-color: lemonchiffon;
+        width: 200px;
+        margin: auto;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <input type="number" v-model="a" />x2+
+      <input type="number" v-model="b" />x+
+      <input type="number" v-model="c" /> =0
+      <input type="button" value="calcular" @click="segundogrado()" />
+      <div v-show="a > 0" style="display: flex; flex-direction: column">
+        <div id="x1" class="resaltado">{{x1}}</div>
+        <div id="x2" class="resaltado">{{x2}}</div>
+      </div>
+    </div>
+    <script type="module">
+      import {
+        createApp,
+        ref,
+      } from "https://unpkg.com/vue@3/dist/vue.esm-browser.js";
+      createApp({
+        data() {
+          return {
+            a: 0,
+            b: 0,
+            c: 0,
+            x1: 0,
+            x2: 0,
+            imaginario: "",
+          };
+        },
+        methods: {
+          segundogrado() {
+            let imaginario = "";
+            let disc = Math.pow(this.b, 2) - 4 * this.a * this.c;
+            if (disc < 0) {
+              imaginario = "i";
+              disc = disc * -1;
+            }
+            let x1 = (-this.b + Math.sqrt(disc)) / (2 * this.a);
+            let x2 = (-this.b - Math.sqrt(disc)) / (2 * this.a);
+
+            this.x1 = x1 + imaginario;
+            this.x2 = x2 + imaginario;
+          },
+        },
+      }).mount("#app");
+    </script>
+  </body>
+</html>
