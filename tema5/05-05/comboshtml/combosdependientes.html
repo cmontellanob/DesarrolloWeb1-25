@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+</head>
+<body onload="obtenerDepartamentos()">
+
+        <h1>Combos Dependientes</h1>
+   
+        <label for="departamento">Departamento</label>
+        <select name="departamento" id="departamento" onchange="obtenerProvincias()" >
+
+        </select> 
+        <br>
+        <label for="provincia">Provincia</label>
+        <select name="provincia" id="provincia" onchange="obtenerMunicipios()" >
+        
+
+        </select> 
+        <br>
+        <label for="municipio">Municipio</label>
+        <select name="municipio" id="municipio">
+        </select>
+
+
+    
+</body>
+</html>

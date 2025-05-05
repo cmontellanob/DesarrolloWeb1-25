@@ -50,7 +50,8 @@ function editar()
     ajax.send(datos);
 }
 function eliminar(id) { 
-    if (dialog("Estas seguro que quieres eliminar")) {
+    if (confirm("Estas seguro que quieres eliminar")) {
+        var ajax = new XMLHttpRequest();
         ajax.open("GET", `delete.php?id=${id}`, true);
         ajax.onreadystatechange = function () {
             if (ajax.readyState == 4 && ajax.status == 200) {

@@ -14,4 +14,4 @@ if ($stmt->execute()) {
 
 $con->close();
 ?>
-<meta http-equiv="refresh" content="3;url=read.php">
+
