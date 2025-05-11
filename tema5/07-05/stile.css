@@ -1,0 +1,37 @@
+.menu {
+ display: flex;
+ justify-content: center;
+
+
+
+}
+
+ul.menu {
+ text-decoration: dashed;
+ list-style: none;
+ display: flex;
+ 
+
+}
+
+ul.menu li a {
+ text-decoration: none;
+ padding: 10px;
+
+}
+
+ul.menu li a:hover {
+   background-color: yellow;
+   
+   }
+
+ul.menu li {
+    padding: 10px;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    border: 1px solid black;
+    max-height: 600px;
+}
