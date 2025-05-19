@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="javascript:crear()" method="post" id="form-insertar">
+      <div class="row">
+        <div class="mb-3 col-12 col-xl-6">
+          <label for="nombres" class="form-label">Nombres</label>
+          <input
+            type="text"
+            class="form-control"
+            id="nombres"
+            name="nombres"
+            aria-describedby="nombreHelp"
+          />
+          <div id="nombreHelp" class="form-text">
+            Introduzca su nombre completo.
+          </div>
+        </div>
+
+        <div class="mb-3 col col-xl-6">
+          <label for="apellidos" class="form-label">Apellidos:</label>
+          <input type="text" class="form-control" name="apellidos" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="mb-3 col-2 col-xl-3">
+          <label for="fecha_nacimiento" class="form-label">Fecha de Nacimiento:</label>
+          <input type="date" name="fecha_nacimiento" class="form-control" />
+        </div>
+        
+        <div class="form-check">
+           <input class="form-check-input" type="radio" name="sexo" id="sexoM" value="Masculino" />
+          <label class="form-check-label" for="sexo">
+            Masculino
+          </label> 
+          </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="sexo" id="sexoF" value="Femenino" />
+          <label class="form-check-label" for="sexo">
+            Femenino
+          </label>
+        </div>
+        
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="correo" class="form-label">Correo:</label>
+        <input type="email" name="correo" class="form-control" />
+      </div>
+      <input type="submit" value="Guardar" />
+    </form>
+  </body>
+</html>
